@@ -8,7 +8,8 @@
 ;; Temporary storage for r2 process std output
 ;; FIXME: this shouldn't be a global variable
 ;; make a list with "process" structure instead and return this
-;; buffer with it in a list or cons
+;; buffer with it in a list or cons and use an alist to store
+;; all of them
 (setq r2-pipe-out-string nil)
 
 (defun r2-pipe-filter (process output)
